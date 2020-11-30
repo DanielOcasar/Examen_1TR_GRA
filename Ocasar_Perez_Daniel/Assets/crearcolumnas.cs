@@ -11,13 +11,13 @@ public class crearcolumnas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine ("ColumnCoroutine");
     }
 
     // Update is called once per frame
     void Update()
     {
-        CrearColumna(); 
+        
        
     }
 
@@ -32,9 +32,11 @@ public class crearcolumnas : MonoBehaviour
     }
 
     IEnumerator ColumnCoroutine(){
-        for (int n=0; ;n++)
+        for (int n=0; ;n++){
         CrearColumna();
-        yield return new WaitForSeconds(10f);
+        
+        yield return new WaitForSeconds(1);
+        }
     }
 
 }
