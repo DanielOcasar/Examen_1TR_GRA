@@ -17,16 +17,18 @@ public class crearcolumnas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CrearColumna();
+        CrearColumna(); 
+       
     }
 
     void CrearColumna (){
-        float posRandom = Random.Range(-10,10);
-
-        Vector3 DestPos = new Vector3(posRandom ,0 , 0);
+        float Random1 = Random.Range(-10,10);
+        float Random2 = Random.Range(-10,10);
+        Vector3 DestPos = new Vector3(Random1 ,0 , Random2);
         Vector3 NewPos = RefPos.position + DestPos;
 
         Instantiate(MyColumn, NewPos, Quaternion.identity);
+          print(NewPos);
     }
 
     IEnumerator ColumnCoroutine(){

@@ -34,7 +34,7 @@ public class esfera : MonoBehaviour
         }
             //restringir en el eje y
         if(posY > -10  && posY < 10 || posY < -10 && desplY > 0 || posY > 10 && desplY < 0 )
-        {   transform.Translate(Vector3.up * Time.deltaTime * speed * desplY);
+        {   transform.Translate(Vector3.forward * Time.deltaTime * speed * desplY);
 
         }
     }
