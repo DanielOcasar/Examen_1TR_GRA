@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class esfera : MonoBehaviour
 {
-
+    
     public float speed;
 
     // Start is called before the first frame update
@@ -38,5 +39,6 @@ public class esfera : MonoBehaviour
 
         }
     }
+
 
 }
