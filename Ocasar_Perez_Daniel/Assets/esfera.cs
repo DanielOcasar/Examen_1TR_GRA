@@ -25,17 +25,17 @@ public class esfera : MonoBehaviour
 
         //variables 
             float posX = transform.position.x;
-            float posY = transform.position.y;
+            float posZ = transform.position.y;
             float desplX = Input.GetAxis("Horizontal");
-            float desplY = Input.GetAxis("Vertical");
+            float desplZ = Input.GetAxis("Vertical");
 
             //restringir en el eje x
         if(posX > -10  && posX < 10 || posX < -10 && desplX > 0 || posX > 10 && desplX < 0 )
         { transform.Translate(Vector3.right * Time.deltaTime * speed * desplX);
         }
             //restringir en el eje y
-        if(posY > -10  && posY < 10 || posY < -10 && desplY > 0 || posY > 10 && desplY < 0 )
-        {   transform.Translate(Vector3.forward * Time.deltaTime * speed * desplY);
+        if(posZ > -10  && posZ < 10 || posZ < -10 && desplZ > 0 || posZ > 10 && desplZ < 0 )
+        {   transform.Translate(Vector3.forward * Time.deltaTime * speed * desplZ);
 
         }
     }
