@@ -34,9 +34,10 @@ public class crearcolumnas : MonoBehaviour
     IEnumerator ColumnCoroutine(){
         for (int n=0; ;n++){
         CrearColumna();
-        
-        yield return new WaitForSeconds(1);
+       }
+        yield return new WaitForSeconds(2);
         }
     }
 
-}
+
+

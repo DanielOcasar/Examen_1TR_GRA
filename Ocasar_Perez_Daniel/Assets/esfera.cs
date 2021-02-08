@@ -25,7 +25,7 @@ public class esfera : MonoBehaviour
 
         //variables 
             float posX = transform.position.x;
-            float posZ = transform.position.y;
+            float posZ = transform.position.z;
             float desplX = Input.GetAxis("Horizontal");
             float desplZ = Input.GetAxis("Vertical");
 
@@ -33,7 +33,7 @@ public class esfera : MonoBehaviour
         if(posX > -10  && posX < 10 || posX < -10 && desplX > 0 || posX > 10 && desplX < 0 )
         { transform.Translate(Vector3.right * Time.deltaTime * speed * desplX);
         }
-            //restringir en el eje y
+            //restringir en el eje z
         if(posZ > -10  && posZ < 10 || posZ < -10 && desplZ > 0 || posZ > 10 && desplZ < 0 )
         {   transform.Translate(Vector3.forward * Time.deltaTime * speed * desplZ);
 
